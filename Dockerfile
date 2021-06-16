@@ -6,7 +6,7 @@ WORKDIR /app
 
 ADD requirements.txt /app
 
-RUN . /appenv/bin/activate 
+#RUN . /appenv/bin/activate 
 RUN pip install -r requirements.txt
 
 ADD server.py index.htm entrypoint.sh /app/
